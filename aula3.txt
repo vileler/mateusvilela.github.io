@@ -1,0 +1,6 @@
+aprendemos a trocar os icones (substituir a estrela) 
+
+modal: position relative, absolut e inicial. Criar div que ocupa tela toda, e deixa opaca
+altera largura e altura
+
+tirar as bolinhas do lado das imagens do portfólio 

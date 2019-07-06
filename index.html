@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- importar scripts do bootstrap para fazer a modal funcionar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mateus Vilela | Designer</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="js-scroll-trigger" href="#" class="logo">MATEUS VILELA</a>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a class="js-scroll-trigger" href="#">PORTFÓLIO</a>
+                </li>
+                <li>
+                    <a class="js-scroll-trigger" href="#">SOBRE</a>
+                </li>
+                <li>
+                    <a class="js-scroll-trigger" href="#">CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="eu.png" width="300" class="perfil">
+        <h2>Mateus Vilela</h2>
+        <h3>Designer Gráfico</h3>
+    </main>
+    <section class="portfolio">
+        <h2>PORTFÓLIO</h2>
+        <ul class="projetos">
+            <!-- colocar atributos data-toggle="modal" e data-target em cada li que vai abrir um projeto, note que o data-target deve ser de acordo com id da modal que 
+            sera aberta,  data-target="#modal-projeto-1" abre a modal com id modal-projeto-1-->
+            <li data-toggle="modal" data-target="#modal-projeto-1"><img src="job1.png" width="250" alt="Abacaxi é top"></li>
+            <li data-toggle="modal" data-target="#modal-projeto-2"><img src="job2.jpg" width="250" alt="Abacaxi é top"></li>
+            <li data-toggle="modal" data-target="#modal-projeto-1"><img src="job3.png" width="250" alt="Abacaxi é top"></li>
+            <li data-toggle="modal" data-target="#modal-projeto-1"><img src="job4.png" width="250" alt="Abacaxi é top"></li>
+            <li data-toggle="modal" data-target="#modal-projeto-1"><img src="job5.png" width="250" alt="Abacaxi é top"></li>
+            <li data-toggle="modal" data-target="#modal-projeto-1"><img src="job6.png" width="250" alt="Abacaxi é top"></li>
+        </ul>
+      
+        <!-- Modal projeto 1, duplicar esse bloco (linha 51 até linha 65) para criar modal para cada projeto
+        colocar um id para a modal de cada projeto -->
+        <div class="modal fade" id="modal-projeto-1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Arquitetura e urbanismo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li><img src="job1.jpg" width="200"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobre">
+        <h2>SOBRE</h2>
+        <div class="row">
+            <div class="col-lg-8 ml-auto mr-auto">
+              <p class="lead text-center">Hi, I’m Mateus. I’m a student living in Sorocaba, Brazil. I am a fan of design, video, music,
+                and technology. You can view my portfolio with a click on the button above ;)</p>
+            </div>
+        <a class="donwload" target="_blank" href="https://www.youtube.com/watch?v=VPSoNx1gyQ4">Donwload</a>
+    </section>
+    <section class="contato">
+        <h2>ENTRE EM CONTATO</h2>
+        <form action="https://formspree.io/mateus.vilela-88@hotmail.com" method="POST">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="E-mail" required>
+            <input type="text" placeholder="Telefone">
+            <textarea placeholder="Mensagem"></textarea>
+            <button>Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <div class="bloco">
+            <h2>ENDEREÇO</h2>
+            <p>Fora da Via Láctea</p>
+            <p>Rua dos MIB</p>
+        </div>
+        <div class="bloco">
+            <h2>REDES SOCIAIS</h2>
+            <ul class="redes">
+                <li><a href="https://www.facebook.com/mateusvilelaalmeida?ref=bookmarks" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/vileler/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/mateus-vilela/" target="_blank">Linkedin</a></li>
+        </div>
+        </ul>
+        <div class="bloco">
+            <h2>EU SOU...</h2>
+            <p>O homem de ferro</p>
+        </div>
+        <span class="copyright">Copyright reserved</span>
+    </footer>
+    <script>src="java.js"</script>
+</body>
+
+</html>
